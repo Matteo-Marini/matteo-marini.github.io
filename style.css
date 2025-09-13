@@ -4,3 +4,7 @@
   --fg0: #000000;
   --fg1: #111110;
 }
+
+body {
+  background-color: var(--fg0);
+}
