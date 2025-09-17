@@ -5,6 +5,77 @@
   --fg1: #111110;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: var(--fg0); */
+}
+
 body {
   background-color: var(--bg0);
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: var(--bg1);
+  padding: 8px 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: top ease-in-out .5s;
+}
+
+header.hidden {
+  top: -64px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.pfp-container {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.content {
+  padding: 64px 10vw 0; 
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-container {
+  width: 20vh;
+  height: 20vh;
+  background-color: red;
+  border-radius: 200px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
